@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/x-icon" href="Quote_Generator_favicon.ico">
+        <title>Quote generator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <!-- Script for the site -->
+        <script src="quotegenerator.js" defer></script>
+        <script src="" defer></script>
+
+        <div class="currency-box">
+            <h1>Currency Converter</h1>
+            <p>Jimin testi pusku</p>
+            <div class="currency-input">
+                <label for="currency">Currency:</label>
+                <input type="text" id="currency" placeholder="Enter currency">
+            </div>
+            <div class="currency-output">
+                <label for="converted-currency">Converted currency:</label>
+                <span id="converted-currency">Loading...</span>
+            </div>
+            <button type="button" onclick="convertCurrency(api_url)" id="Convert"><img src="convert-icon.png">Convert</button>
+        </div>
+        <!-- here comes the Quote generators user interface -->
+        <div class="quote-box">
+            <h1>Quote Generator</h1>
+            <blockquote>Loading...</blockquote>
+            <span>Loading...</span>
+
+          <div>
+            <button type="button" onclick="getQuote2(url)" id="Generate"><img src="generate-icon.png">Generate</button>
+            <button type="button" onclick="shareOnTwitter()" id="share"><img src="x.png">Share</button> 
+          </div>
+
+        </div>
+    </body>
+</html>
